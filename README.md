@@ -1,5 +1,4 @@
 # module 3 javascript
- javascript module 3 assignment
  This is my Password Generator. 
  <br>
  The User wills select if they want a password between 8-128 characters.
