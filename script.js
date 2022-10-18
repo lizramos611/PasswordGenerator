@@ -13,13 +13,13 @@ function generatePassword() {
     if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
       alert("Please enter a numberic value between 8-128 characters");
     }
-     
+    //USER WILL BE PROMPTED TO MAKE SELECTIONS// 
     var userLowercase = window.confirm("Would you like to include uppercase letters?")
     var userUppercase = window.confirm("Would you like to include lowercase numbers?")
     var userNumbers = window.confirm("Would you like to include numbers?")
     var userSymbols = window.confirm("Would you like to include symbols?")
     
-
+//THISS VAR WILL HOLD ALL THE OPTIONS THE USER THEN SELECTS//
     var userSelections = [];
   
   
@@ -40,6 +40,7 @@ function generatePassword() {
       
       userSelections = userSelections.concat(numbersList)
             }
+    //USER HAS SELECTED PASSWORD LENGTH, CHARACTERS TO USE. IT WILL NOW PULL RANDOM CHARACTERS THAT HAVE BEEN SELECTED BY USER//        
         for (var i =0; i < passwordLength; i++) { 
       generatedPassword = generatedPassword + userSelections[Math.floor(Math.random() * userSelections.length)]
 } 
