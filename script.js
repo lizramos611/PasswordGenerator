@@ -48,7 +48,7 @@ function generatePassword() {
 
 }
 
-
+//PASSWORD SHOULD BE GENERATED// 
 
      // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");     
