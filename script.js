@@ -1,15 +1,15 @@
 // Assignment code here
-
+//CHARACTER OPTIONS FOR PASSWORD//
     var lowercaseList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"]
     var uppercaseList = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"]
     var numbersList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
     var symbolsList = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+"]
 var generatedPassword = ""; 
  
-
+//FUNCTION IN ORDER TO CREATE A PASSWORD//
 function generatePassword() {   
   var passwordLength = prompt("How many characters would you like your password to be?");
-
+//IF USER DOESNT MEET CRITERIA A WINDOW WILL ALERT THE USER TO MAKE ADJUSTMENTS//
     if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
       alert("Please enter a numberic value between 8-128 characters");
     }
